@@ -1,0 +1,25 @@
+<script type="text/javascript">
+	
+function CreatePhone( options ) {
+		// this  =  new Object()
+		
+		this.name = options.name
+		this.color = options.color
+		this.memory = options.memory
+
+		//return this
+	}	
+
+	CreatePhone.prototype.call = function () {
+		console.log('打电话')
+	}
+
+
+	let p1 = new CreatePhone({
+		name:'iphone 11',
+		color:'骚粉',
+		memory:'8g'
+	})
+
+	console.log( p1 )
+</script>
